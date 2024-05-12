@@ -1,3 +1,4 @@
+mod threads;
 // XXX: First declare the thread struct that carries data
 
 trait State {}
@@ -122,4 +123,5 @@ fn main() {
     // XXX: The data is sent as clone in threads if necessary. Combined
     // once the threads do their ticks. Finally, cloned data is killed
     // once the threads are done.
+    threads::_thread_processing();
 }
